@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Замовлення</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Логотип Суші Бару" class="logo">
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="menu.html">Меню</a>
+            <a href="order.html">Замовлення</a>
+        </nav>
+       
+    </header>
+
+    <main>
+        <h1>Зробити замовлення</h1>
+        <form action="#">
+            <label for="name">Ім'я:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="phone">Номер телефону:</label><br>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}"><br><br>
+
+            <input type="submit" value="Замовити">
+        </form>
+    </main>
+</body>
+</html>

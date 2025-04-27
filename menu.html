@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Меню Суші</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Логотип Суші Бару" class="logo">
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="menu.html">Меню</a>
+            <a href="order.html">Замовлення</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Наше Меню</h1>
+
+        <div class="filter-buttons">
+            <button onclick="filterMenu('all')">Усі</button>
+            <button onclick="filterMenu('roll')">Роли</button>
+            <button onclick="filterMenu('set')">Сети</button>
+        </div>
+
+        <div class="menu-grid">
+            <div class="menu-item roll">
+                <img src="philadelphia.jpg" alt="Філадельфія">
+                <h2>Філадельфія</h2>
+                <p>180₴</p>
+            </div>
+
+            <div class="menu-item roll">
+                <img src="california.jpg" alt="Каліфорнія">
+                <h2>Каліфорнія</h2>
+                <p>170₴</p>
+            </div>
+
+            <div class="menu-item roll">
+                <img src="dragon.jpg" alt="Дракон рол">
+                <h2>Дракон рол</h2>
+                <p>200₴</p>
+            </div>
+
+            <div class="menu-item roll">
+                <img src="maki.jpg" alt="Макі з лососем">
+                <h2>Макі з лососем</h2>
+                <p>120₴</p>
+            </div>
+
+            <div class="menu-item roll">
+                <img src="tuna.jpg" alt="Тунець рол">
+                <h2>Тунець рол</h2>
+                <p>190₴</p>
+            </div>
+
+            <div class="menu-item roll">
+                <img src="shrimp_tempura.jpg" alt="Темпура з креветкою">
+                <h2>Темпура з креветкою</h2>
+                <p>210₴</p>
+            </div>
+
+            <div class="menu-item roll">
+                <img src="vegetarian.jpg" alt="Вегетаріанський рол">
+                <h2>Вегетаріанський рол</h2>
+                <p>140₴</p>
+            </div>
+
+            <div class="menu-item roll">
+                <img src="spicy_salmon.jpg" alt="Гострий лосось">
+                <h2>Гострий лосось</h2>
+                <p>200₴</p>
+            </div>
+
+            <div class="menu-item roll">
+                <img src="unagi.jpg" alt="Унагі рол">
+                <h2>Унагі рол (вугор)</h2>
+                <p>230₴</p>
+            </div>
+
+            <div class="menu-item set">
+                <img src="combo.jpg" alt="Комбо сет">
+                <h2>Комбо сет (30 ролів)</h2>
+                <p>750₴</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function filterMenu(category) {
+            const items = document.querySelectorAll('.menu-item');
+            items.forEach(item => {
+                if (category === 'all') {
+                    item.style.display = 'block';
+                } else {
+                    if (item.classList.contains(category)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
