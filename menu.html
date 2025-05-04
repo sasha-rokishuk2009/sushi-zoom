@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Логотип Суші Бару" class="logo">
+        <img src="https://logotip.online/static/promo/images/photo_44827.jpg" alt="Логотип Суші Бару" class="logo">
         <nav>
             <a href="index.html">Головна</a>
             <a href="menu.html">Меню</a>
@@ -26,63 +26,92 @@
 
         <div class="menu-grid">
             <div class="menu-item roll">
-                <img src="philadelphia.jpg" alt="Філадельфія">
+                <img src="https://rnr.ua/storage/2025/01/01/f8c77a05ce9307debbfbb849c1d597ed/conversions/19169359846924198-webp_wide.webp" alt="Філадельфія">
                 <h2>Філадельфія</h2>
                 <p>180₴</p>
+                <div class="like-button" onclick="like(this)">
+                    ❤️ <span class="like-count">0</span>
+                </div>
             </div>
 
             <div class="menu-item roll">
-                <img src="california.jpg" alt="Каліфорнія">
+                <img src="https://sushiman.kiev.ua/wp-content/uploads/2024/11/kalifornia-s-krabom-v-ikre-scaled.jpg" alt="Каліфорнія">
                 <h2>Каліфорнія</h2>
                 <p>170₴</p>
+                <div class="like-button" onclick="like(this)">
+                    ❤️ <span class="like-count">0</span>
+                </div>
             </div>
-
             <div class="menu-item roll">
-                <img src="dragon.jpg" alt="Дракон рол">
+                <img src="https://omnomnom.dp.ua/image/cache/catalog/new_rolls/dscf5012-500x500.jpg" alt="Дракон рол">
                 <h2>Дракон рол</h2>
                 <p>200₴</p>
+                <div class="like-button" onclick="like(this)">
+                    ❤️ <span class="like-count">0</span>
+                </div>
             </div>
 
             <div class="menu-item roll">
-                <img src="maki.jpg" alt="Макі з лососем">
+                <img src="data:image/jpeg;base64,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" alt="Макі з лососем">
                 <h2>Макі з лососем</h2>
                 <p>120₴</p>
+                <div class="like-button" onclick="like(this)">
+                    ❤️ <span class="like-count">0</span>
+                </div>
             </div>
 
             <div class="menu-item roll">
-                <img src="tuna.jpg" alt="Тунець рол">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6XW3sxgZ81vzgnDu-FwY4dq1PdYS527YwNg&s" alt="Тунець рол">
                 <h2>Тунець рол</h2>
                 <p>190₴</p>
+                <div class="like-button" onclick="like(this)">
+                    ❤️ <span class="like-count">0</span>
+                </div>
             </div>
 
             <div class="menu-item roll">
                 <img src="shrimp_tempura.jpg" alt="Темпура з креветкою">
                 <h2>Темпура з креветкою</h2>
                 <p>210₴</p>
+                <div class="like-button" onclick="like(this)">
+                    ❤️ <span class="like-count">0</span>
+                </div>
             </div>
 
             <div class="menu-item roll">
                 <img src="vegetarian.jpg" alt="Вегетаріанський рол">
                 <h2>Вегетаріанський рол</h2>
                 <p>140₴</p>
+                <div class="like-button" onclick="like(this)">
+                    ❤️ <span class="like-count">0</span>
+                </div>
             </div>
 
             <div class="menu-item roll">
                 <img src="spicy_salmon.jpg" alt="Гострий лосось">
                 <h2>Гострий лосось</h2>
                 <p>200₴</p>
+                <div class="like-button" onclick="like(this)">
+                    ❤️ <span class="like-count">0</span>
+                </div>
             </div>
 
             <div class="menu-item roll">
                 <img src="unagi.jpg" alt="Унагі рол">
                 <h2>Унагі рол (вугор)</h2>
                 <p>230₴</p>
+                <div class="like-button" onclick="like(this)">
+                    ❤️ <span class="like-count">0</span>
+                </div>
             </div>
 
             <div class="menu-item set">
                 <img src="combo.jpg" alt="Комбо сет">
                 <h2>Комбо сет (30 ролів)</h2>
                 <p>750₴</p>
+                <div class="like-button" onclick="like(this)">
+                    ❤️ <span class="like-count">0</span>
+                </div>
             </div>
         </div>
     </main>
