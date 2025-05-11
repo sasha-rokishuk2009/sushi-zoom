@@ -214,16 +214,16 @@ main {
     box-shadow: #d6d6e7 0 3px 7px inset;
     transform: translateY(2px);
   }
-  .like-btn {
+  .like-button {
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
-    margin-bottom: 15px;
-    transition: transform 0.2s;
-  }
-  
-  .like-btn:hover {
+    color: #ccc; /* Сірий, коли не натиснуто */
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.like-button.liked {
+    color: red; /* Червоний при натисканні */
     transform: scale(1.2);
-  }
-  
+}
